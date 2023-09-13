@@ -8,7 +8,7 @@ function AlertDismissible({ color, text, heading }) {
     setTimeout(() => {
       setShow(true);
     }, 7000);
-  });
+  }, []);
 
   if (show) {
     return (
