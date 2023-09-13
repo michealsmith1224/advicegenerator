@@ -1,0 +1,98 @@
+.ad-gen-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.add-gen-conatiner {
+  background-color: hsl(217, 20%, 21%);
+  width: 100%;
+  max-width: 400px !important;
+  border-radius: 12px;
+  position: relative;
+}
+
+.ad-gen-title {
+  margin-bottom: 10px;
+}
+.ad-gen-title h3 {
+  font-size: 0.6rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+}
+
+.main-ad-gen-body {
+  margin: 20px 0 50px;
+}
+
+.ad-gen-horizontal-line {
+  position: relative;
+}
+
+.ad-gen-pause {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: hsl(217, 20%, 21%);
+  border-radius: 40px;
+  z-index: 2;
+  padding: 10px;
+}
+
+.ad-gen-dice {
+  background-color: hsl(150, 100%, 66%);
+  padding: 7px 11px;
+  border-radius: 100%;
+  color: black;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1s infinite;
+  max-height: 400px !important;
+}
+
+.btn {
+  outline: none !important;
+  border: none !important;
+}
+.btn:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.ad-gen-banner-info-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 50%;
+}
+
+.ad-gen-error-alert {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .ad-gen-banner-info-overlay {
+    width: 100%;
+    padding: 2rem;
+  }
+  .alert-dismissible {
+    padding: 0.9rem !important;
+  }
+
+  .ad-gen-error-alert {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
